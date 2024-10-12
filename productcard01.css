@@ -1,0 +1,88 @@
+.rrr{
+  padding-top: 1vw;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  border: 1px solid #000000;
+  /* box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #8C52FF; */
+}
+
+.imgbor {
+  border-bottom: 1px solid #000000;
+}
+
+.card-title {
+  color: #8C52FF;
+  text-align: left;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+
+.card-body p {
+  font-size: 0.7rem;
+  text-align: left;
+  color: rgb(111, 109, 111);
+}
+
+.card-prize {
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+
+.btn-cardR {
+
+
+border-radius: 500px;
+
+  --bs-btn-color: #000000;
+  /* --bs-btn-bg: rgb(0, 0, 0); */
+  /* --bs-btn-border-color: rgb(0, 0, 0); */
+
+  --bs-btn-hover-color: #8C52FF;
+  --bs-btn-hover-bg: #ffffff;
+  /* --bs-btn-hover-border-color: #8C52FF; */
+
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #000000;
+  --bs-btn-active-border-color: #000000;
+
+  /* box-shadow: 0 0  0px 3px #000; */
+
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+}
+
+.card:hover{
+background-color: #cbcaeb;
+}
+
+
+.btn-card {
+  border-radius:0;
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgb(0, 0, 0);
+    --bs-btn-border-color: rgb(0, 0, 0);
+
+    --bs-btn-hover-color:#fff ;
+    --bs-btn-hover-bg: #8C52FF;
+    --bs-btn-hover-border-color: #8C52FF;
+
+    --bs-btn-focus-shadow-rgb: 208, 88, 242;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #000000;
+
+    /* box-shadow: 0 0  0px 3px #000; */
+
+    /* --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg:#b42ec1;
+    --bs-btn-disabled-border-color: #6c088c; */
+  }

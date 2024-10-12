@@ -1,0 +1,1403 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jaro:opsz@6..72&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14pt;
+
+  padding-top: 2%;
+  overflow: hidden visible;
+  background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(204, 222, 120));
+}
+
+
+
+.nav-link {
+  color: #C1FF72 !important;
+  font-weight: bolder;
+  font-size: 1.2vw;
+  margin: 5px;
+}
+
+.dropdown-item {
+  color: #00BF63 !important;
+  font-size: 1vw;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+  color: #fff !important;
+  background-color: #CCDE72;
+}
+
+/* 調整品項選單按鈕 */
+.btnchging {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  position: relative;
+  z-index: 1;
+  height: 15vw;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  color: #8C52FF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 1s;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 5);
+  h1{
+    font-weight: 800;
+  font-size:4vw;
+  }
+
+  /* margin-bottom: 100px; */
+}
+
+.btnchging:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 0px solid #C5E1E4;
+}
+
+.btnchging:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border: 0px solid #222222;
+  transition: all 0.6s 0.5s;
+}
+
+.btnchging:hover {
+  color: #ffffff;
+  text-shadow: 5px -1.5px 0px rgba(204, 222, 114, 5);
+}
+
+.btnchging:hover:after {
+  transition: all 3s;
+  left: 0;
+  top: 0;
+}
+
+.btnchging .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btnchging .inner .blob {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  background: #E7BFD9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.5s;
+}
+
+.btnchging .inner .blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+
+.btnchging .inner .blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+
+.btnchging .inner .blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+
+.btnchging .inner .blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+
+.btnchging:hover .inner .blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+
+
+
+/* footer CSS */
+#footer {
+  background-color: #E7BFD9;
+  color: #fff;
+  padding: 0;
+}
+
+.footertext {
+  font-size: 10px;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #C1FF72;
+}
+
+
+
+/* 搜尋按鈕 */
+.btn-search {
+
+  border-radius: 0;
+  height: 5vw;
+  width: 4.8vw;
+  --bs-btn-color: #00BF63;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(0, 0, 0);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #00BF63;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00BF63;
+  --bs-btn-active-border-color: #000000;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+
+  font-size: 2vw;
+
+
+}
+
+/* 首頁卡片內容區 */
+.btn-shopping {
+  border-radius: 20px;
+  width: 50%;
+  height: 3em;
+  padding-top: 0.7em;
+  --bs-btn-color: #000000;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(184, 183, 183);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #C1FF72;
+  --bs-btn-active-border-color: #ffffff;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+}
+
+.inxcard-title {
+  font-size: 2em;
+}
+
+.inxcard-text {
+  font-size: 1.5em;
+}
+
+.inxcard-price {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.texttitle {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  font-size: 4vw;
+  color: #B072FF;
+  text-shadow: 2px -1.2px 0px rgba(0, 0, 0, 5);
+}
+
+#scontent img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+#principles h2 {
+  color: #ffffff;
+  text-shadow: 3px 5px 5px #E7BFD9;
+}
+#principles h6 {
+  color: #545554;
+  font-size: 0.85rem;
+}
+
+
+#sidebar{
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+}
+#sidebar input{
+  border-radius: 0;
+  font-size: 1.5vw;
+}
+
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+.breadcrumb a{
+  color: #8C52FF;
+  font-weight: bolder;
+}
+
+.badge.text-bg-dark{
+  font-size: 70%;
+  /* color: #CCDE72 !important; */
+  background-color:#8C52FF !important;
+}
+
+.color_e600a0{
+  color: #8C52FF;
+  font-weight: 900;
+}
+
+.tabsty {
+  /* background-color: #ffe8f7; */
+  /* background-color: rgb(224, 255, 184); */
+  /* border-radius: 500px; */
+  vertical-align: middle;
+}
+
+
+.deskpd{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.docline{
+  border: 1px solid #363837;
+}
+.docline-up{
+  border-top: 1px solid #363837;
+}
+
+
+
+
+
+.docline-three{
+  border-top: 1px solid #363837;
+  border-bottom: 1px solid #363837;
+  border-left: 1px solid #363837;
+}
+
+
+
+
+
+
+
+
+#accordionExample{
+.accordion-button {
+  font-size: 1.5vw;
+}
+
+.accordion-body table td:hover {
+  background-color: #e4f1a3;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.table td {
+  border-top: none;
+  border-bottom: 1px solid #e4f1a3;
+  padding-left: 2rem;
+  font-size: 1.3vw;
+  align-items: center;
+  height: 3.3em;
+  line-height: 3.3em;
+}
+
+.accordion a{
+  color: #8C52FF;
+}
+
+td>em {
+  margin-right: 5px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jaro:opsz@6..72&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14pt;
+
+  padding-top: 2%;
+  overflow: hidden visible;
+  background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(204, 222, 120));
+}
+
+
+
+.nav-link {
+  color: #C1FF72 !important;
+  font-weight: bolder;
+  font-size: 1.2vw;
+  margin: 5px;
+}
+
+.dropdown-item {
+  color: #00BF63 !important;
+  font-size: 1vw;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+  color: #fff !important;
+  background-color: #CCDE72;
+}
+
+/* 調整品項選單按鈕 */
+.btnchging {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  position: relative;
+  z-index: 1;
+  height: 15vw;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  color: #8C52FF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 1s;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 5);
+  h1{
+    font-weight: 800;
+  font-size:4vw;
+  }
+
+  /* margin-bottom: 100px; */
+}
+
+.btnchging:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 0px solid #C5E1E4;
+}
+
+.btnchging:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border: 0px solid #222222;
+  transition: all 0.6s 0.5s;
+}
+
+.btnchging:hover {
+  color: #ffffff;
+  text-shadow: 5px -1.5px 0px rgba(204, 222, 114, 5);
+}
+
+.btnchging:hover:after {
+  transition: all 3s;
+  left: 0;
+  top: 0;
+}
+
+.btnchging .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btnchging .inner .blob {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  background: #E7BFD9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.5s;
+}
+
+.btnchging .inner .blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+
+.btnchging .inner .blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+
+.btnchging .inner .blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+
+.btnchging .inner .blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+
+.btnchging:hover .inner .blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+
+
+
+/* footer CSS */
+#footer {
+  background-color: #E7BFD9;
+  color: #fff;
+  padding: 0;
+}
+
+.footertext {
+  font-size: 10px;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #C1FF72;
+}
+
+
+
+/* 搜尋按鈕 */
+.btn-search {
+
+  border-radius: 0;
+  height: 5vw;
+  width: 4.8vw;
+  --bs-btn-color: #00BF63;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(0, 0, 0);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #00BF63;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00BF63;
+  --bs-btn-active-border-color: #000000;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+
+  font-size: 2vw;
+
+
+}
+
+/* 首頁卡片內容區 */
+.btn-shopping {
+  border-radius: 20px;
+  width: 50%;
+  height: 3em;
+  padding-top: 0.7em;
+  --bs-btn-color: #000000;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(184, 183, 183);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #C1FF72;
+  --bs-btn-active-border-color: #ffffff;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+}
+
+.inxcard-title {
+  font-size: 2em;
+}
+
+.inxcard-text {
+  font-size: 1.5em;
+}
+
+.inxcard-price {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.texttitle {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  font-size: 4vw;
+  color: #B072FF;
+  text-shadow: 2px -1.2px 0px rgba(0, 0, 0, 5);
+}
+
+#scontent img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+#principles h2 {
+  color: #ffffff;
+  text-shadow: 3px 5px 5px #E7BFD9;
+}
+#principles h6 {
+  color: #545554;
+  font-size: 0.85rem;
+}
+
+
+#sidebar{
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+}
+#sidebar input{
+  border-radius: 0;
+  font-size: 1.5vw;
+}
+
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+.breadcrumb a{
+  color: #8C52FF;
+  font-weight: bolder;
+}
+
+.badge.text-bg-dark{
+  font-size: 70%;
+  /* color: #CCDE72 !important; */
+  background-color:#8C52FF !important;
+}
+
+.color_e600a0{
+  color: #8C52FF;
+  font-weight: 900;
+}
+
+.tabsty {
+  /* background-color: #ffe8f7; */
+  /* background-color: rgb(224, 255, 184); */
+  /* border-radius: 500px; */
+  vertical-align: middle;
+}
+
+
+.deskpd{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.docline{
+  border: 1px solid #363837;
+}
+.docline-up{
+  border-top: 1px solid #363837;
+}
+
+
+
+
+
+.docline-three{
+  border-top: 1px solid #363837;
+  border-bottom: 1px solid #363837;
+  border-left: 1px solid #363837;
+}
+
+
+
+
+
+
+
+
+#accordionExample{
+.accordion-button {
+  font-size: 1.5vw;
+}
+
+.accordion-body table td:hover {
+  background-color: #e4f1a3;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.table td {
+  border-top: none;
+  border-bottom: 1px solid #e4f1a3;
+  padding-left: 2rem;
+  font-size: 1.3vw;
+  align-items: center;
+  height: 3.3em;
+  line-height: 3.3em;
+}
+
+.accordion a{
+  color: #8C52FF;
+}
+
+td>em {
+  margin-right: 5px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jaro:opsz@6..72&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14pt;
+
+  padding-top: 2%;
+  overflow: hidden visible;
+  background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(204, 222, 120));
+}
+
+
+
+.nav-link {
+  color: #C1FF72 !important;
+  font-weight: bolder;
+  font-size: 1.2vw;
+  margin: 5px;
+}
+
+.dropdown-item {
+  color: #00BF63 !important;
+  font-size: 1vw;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+  color: #fff !important;
+  background-color: #CCDE72;
+}
+
+/* 調整品項選單按鈕 */
+.btnchging {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  position: relative;
+  z-index: 1;
+  height: 15vw;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  color: #8C52FF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 1s;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 5);
+  h1{
+    font-weight: 800;
+  font-size:4vw;
+  }
+
+  /* margin-bottom: 100px; */
+}
+
+.btnchging:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 0px solid #C5E1E4;
+}
+
+.btnchging:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border: 0px solid #222222;
+  transition: all 0.6s 0.5s;
+}
+
+.btnchging:hover {
+  color: #ffffff;
+  text-shadow: 5px -1.5px 0px rgba(204, 222, 114, 5);
+}
+
+.btnchging:hover:after {
+  transition: all 3s;
+  left: 0;
+  top: 0;
+}
+
+.btnchging .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btnchging .inner .blob {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  background: #E7BFD9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.5s;
+}
+
+.btnchging .inner .blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+
+.btnchging .inner .blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+
+.btnchging .inner .blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+
+.btnchging .inner .blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+
+.btnchging:hover .inner .blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+
+
+
+/* footer CSS */
+#footer {
+  background-color: #E7BFD9;
+  color: #fff;
+  padding: 0;
+}
+
+.footertext {
+  font-size: 10px;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #C1FF72;
+}
+
+
+
+/* 搜尋按鈕 */
+.btn-search {
+
+  border-radius: 0;
+  height: 5vw;
+  width: 4.8vw;
+  --bs-btn-color: #00BF63;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(0, 0, 0);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #00BF63;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00BF63;
+  --bs-btn-active-border-color: #000000;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+
+  font-size: 2vw;
+
+
+}
+
+/* 首頁卡片內容區 */
+.btn-shopping {
+  border-radius: 20px;
+  width: 50%;
+  height: 3em;
+  padding-top: 0.7em;
+  --bs-btn-color: #000000;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(184, 183, 183);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #C1FF72;
+  --bs-btn-active-border-color: #ffffff;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+}
+
+.inxcard-title {
+  font-size: 2em;
+}
+
+.inxcard-text {
+  font-size: 1.5em;
+}
+
+.inxcard-price {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.texttitle {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  font-size: 4vw;
+  color: #B072FF;
+  text-shadow: 2px -1.2px 0px rgba(0, 0, 0, 5);
+}
+
+#scontent img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+#principles h2 {
+  color: #ffffff;
+  text-shadow: 3px 5px 5px #E7BFD9;
+}
+#principles h6 {
+  color: #545554;
+  font-size: 0.85rem;
+}
+
+
+#sidebar{
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+}
+#sidebar input{
+  border-radius: 0;
+  font-size: 1.5vw;
+}
+
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+.breadcrumb a{
+  color: #8C52FF;
+  font-weight: bolder;
+}
+
+.badge.text-bg-dark{
+  font-size: 70%;
+  /* color: #CCDE72 !important; */
+  background-color:#8C52FF !important;
+}
+
+.color_e600a0{
+  color: #8C52FF;
+  font-weight: 900;
+}
+
+.tabsty {
+  /* background-color: #ffe8f7; */
+  /* background-color: rgb(224, 255, 184); */
+  /* border-radius: 500px; */
+  vertical-align: middle;
+}
+
+
+.deskpd{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.docline{
+  border: 1px solid #363837;
+}
+.docline-up{
+  border-top: 1px solid #363837;
+}
+
+
+
+
+
+.docline-three{
+  border-top: 1px solid #363837;
+  border-bottom: 1px solid #363837;
+  border-left: 1px solid #363837;
+}
+
+
+
+
+
+
+
+
+#accordionExample{
+.accordion-button {
+  font-size: 1.5vw;
+}
+
+.accordion-body table td:hover {
+  background-color: #e4f1a3;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.table td {
+  border-top: none;
+  border-bottom: 1px solid #e4f1a3;
+  padding-left: 2rem;
+  font-size: 1.3vw;
+  align-items: center;
+  height: 3.3em;
+  line-height: 3.3em;
+}
+
+.accordion a{
+  color: #8C52FF;
+}
+
+td>em {
+  margin-right: 5px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jaro:opsz@6..72&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14pt;
+
+  padding-top: 2%;
+  overflow: hidden visible;
+  background-repeat: no-repeat;
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(204, 222, 120));
+}
+
+
+
+.nav-link {
+  color: #C1FF72 !important;
+  font-weight: bolder;
+  font-size: 1.2vw;
+  margin: 5px;
+}
+
+.dropdown-item {
+  color: #00BF63 !important;
+  font-size: 1vw;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+  color: #fff !important;
+  background-color: #CCDE72;
+}
+
+/* 調整品項選單按鈕 */
+.btnchging {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  position: relative;
+  z-index: 1;
+  height: 15vw;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  color: #8C52FF;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 1s;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 5);
+  h1{
+    font-weight: 800;
+  font-size:4vw;
+  }
+
+  /* margin-bottom: 100px; */
+}
+
+.btnchging:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 0px solid #C5E1E4;
+}
+
+.btnchging:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  border: 0px solid #222222;
+  transition: all 0.6s 0.5s;
+}
+
+.btnchging:hover {
+  color: #ffffff;
+  text-shadow: 5px -1.5px 0px rgba(204, 222, 114, 5);
+}
+
+.btnchging:hover:after {
+  transition: all 3s;
+  left: 0;
+  top: 0;
+}
+
+.btnchging .inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.btnchging .inner .blob {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  height: 100%;
+  background: #E7BFD9;
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.5s;
+}
+
+.btnchging .inner .blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+
+.btnchging .inner .blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+
+.btnchging .inner .blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+
+.btnchging .inner .blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+
+.btnchging:hover .inner .blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+
+
+
+/* footer CSS */
+#footer {
+  background-color: #E7BFD9;
+  color: #fff;
+  padding: 0;
+}
+
+.footertext {
+  font-size: 10px;
+}
+
+#footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #C1FF72;
+}
+
+
+
+/* 搜尋按鈕 */
+.btn-search {
+
+  border-radius: 0;
+  height: 5vw;
+  width: 4.8vw;
+  --bs-btn-color: #00BF63;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(0, 0, 0);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #00BF63;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #00BF63;
+  --bs-btn-active-border-color: #000000;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+
+  font-size: 2vw;
+
+
+}
+
+/* 首頁卡片內容區 */
+.btn-shopping {
+  border-radius: 20px;
+  width: 50%;
+  height: 3em;
+  padding-top: 0.7em;
+  --bs-btn-color: #000000;
+  --bs-btn-bg: rgb(255, 255, 255);
+  --bs-btn-border-color: rgb(184, 183, 183);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #ffffff;
+  --bs-btn-focus-shadow-rgb: 208, 88, 242;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #C1FF72;
+  --bs-btn-active-border-color: #ffffff;
+  /* --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#b42ec1;
+  --bs-btn-disabled-border-color: #6c088c; */
+}
+
+.inxcard-title {
+  font-size: 2em;
+}
+
+.inxcard-text {
+  font-size: 1.5em;
+}
+
+.inxcard-price {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.texttitle {
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+  font-size: 4vw;
+  color: #B072FF;
+  text-shadow: 2px -1.2px 0px rgba(0, 0, 0, 5);
+}
+
+#scontent img {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+
+#principles h2 {
+  color: #ffffff;
+  text-shadow: 3px 5px 5px #E7BFD9;
+}
+#principles h6 {
+  color: #545554;
+  font-size: 0.85rem;
+}
+
+
+#sidebar{
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+}
+#sidebar input{
+  border-radius: 0;
+  font-size: 1.5vw;
+}
+
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  font-family: "Poetsen One", "Noto Sans TC", sans-serif;
+
+}
+.breadcrumb a{
+  color: #8C52FF;
+  font-weight: bolder;
+}
+
+.badge.text-bg-dark{
+  font-size: 70%;
+  /* color: #CCDE72 !important; */
+  background-color:#8C52FF !important;
+}
+
+.color_e600a0{
+  color: #8C52FF;
+  font-weight: 900;
+}
+
+.tabsty {
+  /* background-color: #ffe8f7; */
+  /* background-color: rgb(224, 255, 184); */
+  /* border-radius: 500px; */
+  vertical-align: middle;
+}
+
+
+.deskpd{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.docline{
+  border: 1px solid #363837;
+}
+.docline-up{
+  border-top: 1px solid #363837;
+}
+
+
+
+
+
+.docline-three{
+  border-top: 1px solid #363837;
+  border-bottom: 1px solid #363837;
+  border-left: 1px solid #363837;
+}
+
+
+
+
+
+
+
+
+#accordionExample .table td{
+  border-top: none;
+  border-bottom: 1px solid #e4f1a3;
+  padding-left: 2rem;
+  font-size: 1.3vw;
+  align-items: center;
+  height: 3.3em;
+  line-height: 3.3em;
+}
+
+#accordionExample td>em {
+  margin-right: 5px;
+}
+
+.accordion a{
+  color: #8C52FF;
+}
+.accordion-button {
+  font-size: 1.5vw;
+}
+.accordion-body table td:hover {
+  background-color: #e4f1a3;
+}
+
+.accordion-body {
+  padding: 0;
+}
+#accordionExample .table{
+  margin-bottom: 0;
+  color: #fff;
+}
